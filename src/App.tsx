@@ -1,4 +1,3 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/widgets/Header/Header";
 import Home from "./components/pages/Home/Home";
@@ -9,11 +8,16 @@ import AuthorRouter from "./routers/Author.router";
 import IconRouter from "./routers/Icon.router";
 import LoginRouter from "./routers/Login.router";
 import SinginRouter from "./routers/Singin.router";
+import TestRouter from "./routers/Test.router";
 
 
 function App() {
 	return (
 		<div className="App">
+			<TestRouter>
+				
+			</TestRouter>
+			
 			<LoginRouter>
 			<Header />
 				{/* <Search /> */}

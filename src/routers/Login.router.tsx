@@ -1,5 +1,5 @@
-import React, { FC, PropsWithChildren } from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import  { FC, PropsWithChildren } from "react";
+import { Routes, Route } from "react-router-dom";
 import Login from '../components/pages/Authentication/Login/Login'
 
 const LoginRouter: FC<PropsWithChildren> = ({ children }) => {

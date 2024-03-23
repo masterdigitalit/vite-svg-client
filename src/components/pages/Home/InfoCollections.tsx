@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useRef, useState } from "react";
+import  { FC, useEffect, useRef, useState } from "react";
 import style from "../../../styles/components/pages/home.module.scss";
 import { Link } from "react-router-dom";
 import { Onscroll } from "../../../scripts/Onscroll";
@@ -46,8 +46,8 @@ const InfoCollections: FC = () => {
 				</div>
 				<hr></hr>
 				<div className={style["collection-items"]} ref={divs}>
-					{collection.map((el, key) => (
-						<Link to={`/collection/${el.title}`}>
+					{collection.map((el) => (
+						<Link to={`/collection/${el.title}`} key={el.title}>
 							<div className={style.item}>
 								<div className={style.images}>
 									{el.svg.map((svg) => (

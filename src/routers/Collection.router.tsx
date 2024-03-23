@@ -1,5 +1,5 @@
-import React, { FC, PropsWithChildren } from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import  { FC, PropsWithChildren } from "react";
+import { Routes, Route } from "react-router-dom";
 import Collection from "../components/pages/Collection/Collection";
 
 const CollectionRouter: FC<PropsWithChildren> = ({ children }) => {

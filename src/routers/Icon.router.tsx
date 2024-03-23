@@ -1,5 +1,5 @@
-import React, { FC, PropsWithChildren } from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import  { FC, PropsWithChildren } from "react";
+import { Routes, Route } from "react-router-dom";
 import Icon from "../components/pages/Icon/Icon";
 
 const IconRouter: FC<PropsWithChildren> = ({ children }) => {

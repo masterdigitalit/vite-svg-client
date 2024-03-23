@@ -1,6 +1,5 @@
-import React, { FC, useEffect, useRef, useState, PropsWithChildren } from "react";
+import { FC, useEffect, useRef, useState, PropsWithChildren } from "react";
 import style from "../../../styles/components/pages/home.module.scss";
-import { Link } from "react-router-dom";
 import { Onscroll } from "../../../scripts/Onscroll";
 import InfoComponent from "./InfoContainer";
 import InfoCollections from "./InfoCollections";

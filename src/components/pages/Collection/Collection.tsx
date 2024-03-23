@@ -1,10 +1,8 @@
-import React, { FC, useState, useEffect } from "react";
+import  { FC, useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import style from "../../../styles/components/pages/collection.module.scss";
 import axios from "../../../api/axios";
 import { Download } from "../../../scripts/Download";
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
 import SkeletonComponent from "./Skeleton";
 
 type IIcons = {
@@ -13,7 +11,7 @@ type IIcons = {
 	svg: string;
 };
 
-const Collection: FC = ({}) => {
+const Collection: FC = () => {
 	const [Loading, setLoading] = useState<boolean>(true);
 	const [Icons, setIcons] = useState<IIcons[]>([]);
 	const { url } = useParams();
@@ -32,7 +30,7 @@ const Collection: FC = ({}) => {
 				},
 			})
 			.then((response) => {
-				let intervalId = setInterval(myFunction, 1000);
+				const intervalId = setInterval(myFunction, 1000);
 				function myFunction() {
 					setLoading(false);
 					setIcons(response.data);

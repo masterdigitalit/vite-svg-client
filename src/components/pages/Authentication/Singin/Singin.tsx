@@ -1,7 +1,7 @@
-import React, { FC, useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import  { FC } from "react";
+import { Link } from "react-router-dom";
 import style from "../../../../styles/components/pages/singin.module.scss";
-const Singin: FC = ({}) => {
+const Singin: FC = () => {
 	return (
 		<>
 			<div className={style.login}>

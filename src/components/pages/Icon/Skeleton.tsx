@@ -1,9 +1,9 @@
-import React, { FC, useState, useEffect } from "react";
+import { FC} from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import style from "../../../styles/components/pages/icon.module.scss";
 
-const SkeletonComponent: FC = ({}) => {
+const SkeletonComponent: FC = () => {
 	// function ArrayLength() {
 	// 	let width = window.innerWidth;
 	// 	if (width >= 1024 && width <= 1600) {

@@ -1,11 +1,11 @@
-import React, { FC, useState, useEffect } from "react";
+import  { FC } from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import style from "../../../styles/components/pages/collection.module.scss";
 
-const SkeletonComponent: FC = ({}) => {
+const SkeletonComponent: FC = () => {
 	function ArrayLength() {
-		let width = window.innerWidth;
+		const width = window.innerWidth;
 		if (width >= 1024 && width <= 1600) {
 			return 12;
 		} else if (width >= 768 && width <= 1024) {
@@ -25,7 +25,7 @@ const SkeletonComponent: FC = ({}) => {
 				<Skeleton height={"3vh"} width={"40%"} className={style.title} />
 				<Skeleton height={"8vh"} className={style["info-title"]} />
 				<div className={style.items}>
-					{[...new Array(ArrayLength())].map((el) => (
+					{[...new Array(ArrayLength())].map(() => (
 						<Skeleton height={"20vh"} className={style.item} />
 					))}
 				</div>

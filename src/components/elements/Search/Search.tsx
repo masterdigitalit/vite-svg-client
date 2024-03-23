@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import  { FC } from "react";
 import style from "../../../styles/components/elements/search.module.scss";
 import { useParams, Link } from "react-router-dom";
 import GetUrlParams from "./GetUrlParams";
