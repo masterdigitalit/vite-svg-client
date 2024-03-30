@@ -1,30 +1,20 @@
-import { FC, useRef , useEffect} from "react";
+import { FC, useRef, useEffect } from "react";
 import WritingTextEffect from "../../../hooks/WritingTextEffect";
 
-
-
 const Test: FC = () => {
-	const txt = 'Lorem ipsum Lorem ipsum'; 
-
-
-
-	const data = useRef<HTMLParagraphElement>(null)
-	const params = { el:  data , speed: 60, text : txt}
+	const txt =
+		"В очарованье русского пейзажа\nЕсть подлинная радость, но она\nОткрыта не для каждого и даже\nНе каждому художнику видна.\nС утра обремененная работой,\nТрудом лесов, заботами полей,\nПрирода смотрит как бы с неохотой\nНа нас, не очарованных людей.\nИ лишь когда за темной чащей леса\nВечерний луч таинственно блеснет,\nОбыденности плотная завеса\nС ее красот мгновенно упадет.\nВздохнут леса, опущенные в воду,\nИ, как бы сквозь прозрачное стекло,\nВся грудь реки приникнет к небосводу\nИ загорится влажно и светло.\nИз белых башен облачного мира\nСойдет огонь, и в нежном том огне,\nКак будто под руками ювелира,\nСквозные тени лягут в глубине.\nИ чем ясней становятся детали\nПредметов, расположенных вокруг,\nТем необъятней делаются дали\nРечных лугов, затонов и излук.\nГорит весь мир, прозрачен и духовен,\nТеперь-то он поистине хорош,\nИ ты, ликуя, множество диковин\nВ его живых чертах распознаешь. ";
+	const data = useRef<HTMLParagraphElement>(null);
+	const params = { el: data, speed: 60, text: txt };
 	useEffect(() => {
-		WritingTextEffect(params )
-
- } )
-	
-
-	
-
-
+		WritingTextEffect(params);
+	});
 	return (
-<>
-<div className="text">
-	<p ref={data}></p>
-</div>
-</>
+		<>
+			<div className="text">
+				<p ref={data}></p>
+			</div>
+		</>
 	);
 };
 

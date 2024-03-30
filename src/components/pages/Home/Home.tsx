@@ -5,7 +5,7 @@ import InfoComponent from "./InfoContainer";
 import InfoCollections from "./InfoCollections";
 import StyleCollections from "./CollectionStyles";
 
-const Home: FC<PropsWithChildren> = ({children}) => {
+const Home: FC<PropsWithChildren> = ({ children }) => {
 	const [scrollTop, setScrollTop] = useState(0);
 
 	useEffect(() => {
@@ -22,19 +22,15 @@ const Home: FC<PropsWithChildren> = ({children}) => {
 
 	return (
 		<>
-		{children}
+			{children}
 			<div className={style.Home}>
-				<div className={style["hello-title"]}>
-					500.000+ Open-licensed SVG Vector and Icons
-				</div>
+				<div className={style["hello-title"]}>500.000+ Open-licensed SVG Vector and Icons</div>
 				<div className={style["info-title"]}>
-					Search, explore and edit the best-fitting free icons or vectors for
-					your projects using a wide variety vector library. Download free SVG
-					vectors and icons for commercial use.
+					Search, explore and edit the best-fitting free icons or vectors for your projects using a wide variety vector library. Download free SVG vectors and icons for commercial use.
 				</div>
 				<InfoComponent />
 				<InfoCollections />
-				<StyleCollections/>
+				<StyleCollections />
 			</div>
 		</>
 	);

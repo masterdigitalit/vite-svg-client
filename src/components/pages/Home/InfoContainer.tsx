@@ -1,4 +1,4 @@
-import  { FC, useState, useEffect } from "react";
+import { FC, useState, useEffect } from "react";
 import style from "../../../styles/components/pages/home.module.scss";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
@@ -27,87 +27,47 @@ const InfoComponent: FC = () => {
 			) : (
 				<div className={style["info-container"]}>
 					<div className={style.item}>
-						<div className={style.img}><img
-							src={"/static/svg/bockmark.svg"}
-							className={style.icon}
-							alt=""
-						/></div>
-						
+						<div className={style.img}>
+							<img src={"/static/svg/bockmark.svg"} className={style.icon} alt="" />
+						</div>
+
 						<div className={style["item-title"]}>Easily Search and Find</div>
-						<p>
-							Using ML-powered search, find the suitable vector you are looking
-							for easily
-						</p>
+						<p>Using ML-powered search, find the suitable vector you are looking for easily</p>
 					</div>
 					<div className={style.item}>
-					<div className={style.img}>
-						<img
-							src={"/static/svg/scissors.svg"}
-							className={style.icon}
-							alt=""
-						/>
-							</div>
+						<div className={style.img}>
+							<img src={"/static/svg/scissors.svg"} className={style.icon} alt="" />
+						</div>
 						<div className={style["item-title"]}>Editing & Remixing</div>
-						<p>
-							Make basic changes on an icon or vector without needing a design
-							software
-						</p>
+						<p>Make basic changes on an icon or vector without needing a design software</p>
 					</div>
 					<div className={style.item}>
-					<div className={style.img}>
-						<img
-							src={"/static/svg/code.svg"}
-							className={style.icon}
-							alt=""
-						/>
-							</div>
+						<div className={style.img}>
+							<img src={"/static/svg/code.svg"} className={style.icon} alt="" />
+						</div>
 						<div className={style["item-title"]}>Optimized Vectors</div>
-						<p>
-							All served icons and vectors are optimized with our SVGO based
-							compressor
-						</p>
+						<p>All served icons and vectors are optimized with our SVGO based compressor</p>
 					</div>
 					<div className={style.item}>
-					<div className={style.img}>
-						<img
-							src={"/static/svg/community.svg"}
-							className={style.icon}
-							alt=""
-						/>
-							</div>
+						<div className={style.img}>
+							<img src={"/static/svg/community.svg"} className={style.icon} alt="" />
+						</div>
 						<div className={style["item-title"]}>Community Powered</div>
-						<p>
-							From me to us. Share your work, help the community grow, and get
-							link attributions
-						</p>
+						<p>From me to us. Share your work, help the community grow, and get link attributions</p>
 					</div>
 					<div className={style.item}>
-					<div className={style.img}>
-						<img
-							src={"/static/svg/money.svg"}
-							className={style.icon}
-							alt=""
-						/>
-							</div>
+						<div className={style.img}>
+							<img src={"/static/svg/money.svg"} className={style.icon} alt="" />
+						</div>
 						<div className={style["item-title"]}>Commercial Friendly</div>
-						<p>
-							Most icons and vectors are useable for your commercial projects
-							without any royalties
-						</p>
+						<p>Most icons and vectors are useable for your commercial projects without any royalties</p>
 					</div>
 					<div className={style.item}>
-					<div className={style.img}>
-						<img
-							src={"/static/svg/money.svg"}
-							className={style.icon}
-							alt=""
-						/>
-							</div>
+						<div className={style.img}>
+							<img src={"/static/svg/money.svg"} className={style.icon} alt="" />
+						</div>
 						<div className={style["item-title"]}>Always Free, No Premium</div>
-						<p>
-							We don't show premium content while you are trying to find free
-							assets
-						</p>
+						<p>We don't show premium content while you are trying to find free assets</p>
 					</div>
 				</div>
 			)}

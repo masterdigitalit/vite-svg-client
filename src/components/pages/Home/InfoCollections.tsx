@@ -1,4 +1,4 @@
-import  { FC, useEffect, useRef, useState } from "react";
+import { FC, useEffect, useRef, useState } from "react";
 import style from "../../../styles/components/pages/home.module.scss";
 import { Link } from "react-router-dom";
 import { Onscroll } from "../../../scripts/Onscroll";
@@ -24,22 +24,14 @@ const InfoCollections: FC = () => {
 			<div className={style.collections}>
 				<div className={style["hello-title"]}>Vector Collections</div>
 				<div className={style["info-title"]}>
-					See our latest featured vector collections, and choose the desired
-					style of vector collections to list from the tabs. Browse 6000+
-					collections of SVG icons by color and style.
+					See our latest featured vector collections, and choose the desired style of vector collections to list from the tabs. Browse 6000+ collections of SVG icons by color and style.
 				</div>
 				<div className={style.links}>
 					{buttons.map((button) => (
-						<Link to={`/collection/${button.title}`}>
+						<Link to={`/collection/${button.title}`} key={button.title}>
 							<div className={style["link-btn"]}>
 								{" "}
-								{button.svg && (
-									<img
-										src={`/static/svg/${button.svg}`}
-										alt=""
-									/>
-								)}{" "}
-								{button.title}
+								{button.svg && <img src={`/static/svg/${button.svg}`}  alt="" />} {button.title}
 							</div>
 						</Link>
 					))}
@@ -48,14 +40,10 @@ const InfoCollections: FC = () => {
 				<div className={style["collection-items"]} ref={divs}>
 					{collection.map((el) => (
 						<Link to={`/collection/${el.title}`} key={el.title}>
-							<div className={style.item}>
-								<div className={style.images}>
+							<div className={style.item} key={el.title}>
+								<div className={style.images} key={el.title}>
 									{el.svg.map((svg) => (
-										<img
-											src={`/static/svg/${svg}`}
-											className={style.icon}
-											alt=""
-										/>
+										<img src={`/static/svg/${svg}`} width={'50%'} className={style.icon} alt="" key={svg} />
 									))}
 								</div>
 								<div className={style["items-info"]}>

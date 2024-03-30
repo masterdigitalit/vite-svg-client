@@ -1,22 +1,17 @@
-import  { FC, PropsWithChildren } from "react";
+import { FC, PropsWithChildren } from "react";
 import { Routes, Route } from "react-router-dom";
 import Test from "../components/pages/Test/Test";
 
 const TestRouter: FC<PropsWithChildren> = ({ children }) => {
 	return (
 		<>
-			
-
 			<Routes>
-				{/* <Route path="/camera" element={ <><Camera /></> } /> */}
-
 				<Route
 					path="/test"
 					element={
 						<>
-						{children}
-						<Test/>
-						
+							{children}
+							<Test />
 						</>
 					}
 				/>

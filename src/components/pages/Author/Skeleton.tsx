@@ -1,4 +1,4 @@
-import  { FC } from "react";
+import { FC } from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import style from "../../../styles/components/pages/collection.module.scss";
@@ -17,7 +17,7 @@ const SkeletonComponent: FC = () => {
 		}
 	}
 
-	console.log(ArrayLength());
+	(ArrayLength());
 
 	return (
 		<>

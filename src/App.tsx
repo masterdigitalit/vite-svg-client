@@ -10,20 +10,17 @@ import LoginRouter from "./routers/Login.router";
 import SinginRouter from "./routers/Singin.router";
 import TestRouter from "./routers/Test.router";
 
-
 function App() {
 	return (
 		<div className="App">
-			<TestRouter>
-				
-			</TestRouter>
-			
+			<TestRouter></TestRouter>
+
 			<LoginRouter>
-			<Header />
+				<Header />
 				{/* <Search /> */}
 			</LoginRouter>
 			<SinginRouter>
-			<Header />
+				<Header />
 				{/* <Search /> */}
 			</SinginRouter>
 			<CollectionRouter>
@@ -38,9 +35,7 @@ function App() {
 				<Header />
 				<Search />
 			</IconRouter>
-		
-							
-			
+
 			<Routes>
 				{/* <Route path="/camera" element={ <><Camera /></> } /> */}
 

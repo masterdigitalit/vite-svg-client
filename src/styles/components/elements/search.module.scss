@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+
 @media (min-width: 1024px) and (max-width: 1600px) {
 	.search {
 		background-color: #F1F5F9;
 		padding: 20px;
 		display: flex;
 		flex-wrap: wrap;
+		
 
 		input {
 			border-radius: 20px;
@@ -18,7 +19,7 @@
 			background: #fff;
 			height: 46px;
 			border-radius: 23px 0px 0px 23px;
-			border: 2px solid #93bded;
+			border: 2px solid #1D589B;
 			font-size: clamp(10px, 3.4vw, 16px);
 			font-family: 'Inter', sans-serif !important;
 		}
@@ -31,7 +32,7 @@
 			width: 80px;
 			height: 46px;
 			border: none;
-			background-color: #74b0f5;
+			background-color: #1D589B;
 			border-radius: 0 5px 5px 0;
 			cursor: pointer;
 			color: white;
@@ -78,13 +79,6 @@
 
 			}
 
-			// &:nth-child(3n) .item{
-			// 	background: #f4eddf; /* Цвет фона */
-			// 	padding: 10px; /* Поля вокруг текста */
-			// 	white-space: nowrap; /* Текст не переносится */
-			// 	overflow: hidden; /* Обрезаем всё за пределами блока */
-			// 	text-overflow: ellipsis;
-			// }
 
 			.item::after {
 				left: 5px;
@@ -116,7 +110,7 @@
 			background: #fff;
 			height: 46px;
 			border-radius: 23px 0px 0px 23px;
-			border: 2px solid #93bded;
+			border: 2px solid #1D589B;
 			font-size: clamp(10px, 3.4vw, 16px);
 			font-family: 'Inter', sans-serif !important;
 		}
@@ -129,7 +123,7 @@
 			width: 80px;
 			height: 46px;
 			border: none;
-			background-color: #74b0f5;
+			background-color: #1D589B;
 			border-radius: 0 5px 5px 0;
 			cursor: pointer;
 			color: white;
@@ -176,13 +170,6 @@
 
 			}
 
-			// &:nth-child(3n) .item{
-			// 	background: #f4eddf; /* Цвет фона */
-			// 	padding: 10px; /* Поля вокруг текста */
-			// 	white-space: nowrap; /* Текст не переносится */
-			// 	overflow: hidden; /* Обрезаем всё за пределами блока */
-			// 	text-overflow: ellipsis;
-			// }
 
 			.item::after {
 				left: 5px;
@@ -214,11 +201,10 @@
 			background: #fff;
 			height: 46px;
 			border-radius: 23px 0px 0px 23px;
-			border: 2px solid #93bded;
+			border: 2px solid #1D589B;
 			font-size: clamp(10px, 3.4vw, 16px);
 			font-family: 'Inter', sans-serif !important;
 		}
-
 		button {
 			font-family: 'Inter', sans-serif !important;
 			position: absolute;
@@ -227,7 +213,7 @@
 			width: 80px;
 			height: 46px;
 			border: none;
-			background-color: #74b0f5;
+			background-color: #1D589B;
 			border-radius: 0 5px 5px 0;
 			cursor: pointer;
 			color: white;
@@ -236,7 +222,6 @@
 			font-weight: 600;
 			letter-spacing: 1.1px;
 		}
-
 		.path {
 			display: flex;
 			margin-top: 10px;
@@ -244,8 +229,6 @@
 			flex-wrap: nowrap;
 			-ms-overflow-style: none;
 			scrollbar-width: none;
-
-
 			.item {
 				display: flex;
 				flex-direction: row;
@@ -273,15 +256,6 @@
 
 
 			}
-
-			// &:nth-child(3n) .item{
-			// 	background: #f4eddf; /* Цвет фона */
-			// 	padding: 10px; /* Поля вокруг текста */
-			// 	white-space: nowrap; /* Текст не переносится */
-			// 	overflow: hidden; /* Обрезаем всё за пределами блока */
-			// 	text-overflow: ellipsis;
-			// }
-
 			.item::after {
 				left: 5px;
 				position: relative;

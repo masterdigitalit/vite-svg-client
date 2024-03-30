@@ -1,12 +1,10 @@
-import  { FC, PropsWithChildren } from "react";
+import { FC, PropsWithChildren } from "react";
 import { Routes, Route } from "react-router-dom";
 import Author from "../components/pages/Author/Author";
 
 const AuthorRouter: FC<PropsWithChildren> = ({ children }) => {
 	return (
 		<>
-			
-
 			<Routes>
 				{/* <Route path="/camera" element={ <><Camera /></> } /> */}
 
@@ -14,7 +12,7 @@ const AuthorRouter: FC<PropsWithChildren> = ({ children }) => {
 					path="/author/:url"
 					element={
 						<>
-						{children}
+							{children}
 							<Author />
 						</>
 					}

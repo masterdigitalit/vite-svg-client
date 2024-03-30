@@ -24,7 +24,7 @@ export const collection = [
 			"medicine/clinic-building-svgrepo-com.svg",
 			"medicine/capsule-svgrepo-com.svg",
 			"medicine/beaker-svgrepo-com.svg",
-			"medicine/ambulance-svgrepo-com.svg",
+			"medicine/test-tube-svgrepo-com.svg",
 		],
 	},
 
@@ -98,7 +98,6 @@ export const collection = [
 			"business/collect-svgrepo-com.svg",
 		],
 	},
-
 ];
 export const buttons = [
 	{ title: "All Styles", href: "", svg: "" },

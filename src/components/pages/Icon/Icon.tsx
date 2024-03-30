@@ -30,7 +30,7 @@ const Icon: FC = () => {
 	}, [new URLSearchParams(window.location.search)]);
 
 	useEffect(() => {
-		console.log(url);
+		(url);
 		// try {
 		// 👇️ const data: GetUsersResponse
 		axios
@@ -48,12 +48,10 @@ const Icon: FC = () => {
 					setLoading(false);
 					setIcon(response.data);
 					clearInterval(intervalId);
-					console.log(response.data);
+					(response.data);
 				}
 			});
 	}, []);
-
-
 
 	return (
 		<>
@@ -99,7 +97,6 @@ const Icon: FC = () => {
 												transform="rotate(90)"
 												strokeWidth="2"
 												strokeLinecap="round"
-					
 											>
 												<path d="M9 18l6-6-6-6"></path>
 											</svg>
