@@ -20,7 +20,8 @@ function Download<Type extends IDownload>(arg: Type): Type {
 			link.click();
 			document.body.removeChild(link);
 		});
-	g(response);
+		response
+
 	return arg;
 }
 export { Download };
