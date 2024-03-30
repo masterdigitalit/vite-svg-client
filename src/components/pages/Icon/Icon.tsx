@@ -30,7 +30,7 @@ const Icon: FC = () => {
 	}, [new URLSearchParams(window.location.search)]);
 
 	useEffect(() => {
-		(url);
+		g(url);
 		// try {
 		// 👇️ const data: GetUsersResponse
 		axios
@@ -48,7 +48,7 @@ const Icon: FC = () => {
 					setLoading(false);
 					setIcon(response.data);
 					clearInterval(intervalId);
-					(response.data);
+					g(response.data);
 				}
 			});
 	}, []);

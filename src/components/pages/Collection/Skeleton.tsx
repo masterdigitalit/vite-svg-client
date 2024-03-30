@@ -17,7 +17,7 @@ const SkeletonComponent: FC = () => {
 		}
 	}
 
-	(ArrayLength());
+	g(ArrayLength());
 
 	return (
 		<>
